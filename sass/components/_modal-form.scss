@@ -1,0 +1,210 @@
+.modal-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* display: flex;
+    flex-direction: column; */
+    padding: 40px;
+    max-width: 100%;
+    /* height: 581px; */
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    transition-property: opacity, transform;
+    opacity: 1;
+    transition: transform 450ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-title {
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 30px;
+}
+
+.modal-form-input-wrapper {
+    position: relative;
+    margin-bottom: 28px;
+}
+
+.modal-form-svg {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+}
+
+.modal-form-label {
+    position: absolute;
+    top: 50%;
+    left: 42px;
+    transform: translateY(-50%);
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+    color: #757575;
+    transition-property: transform, color, border;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+                color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-input {
+    width: 100%;
+    height: 40px;  
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding-left: 42px;
+    outline: none;
+    /* color: #757575; */
+    transition-property: border;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.modal-form-input {
+    &:focus {
+    border: 1px solid $accent-color;
+    border-radius: 4px;
+    }
+}
+
+
+.modal-form-input {
+    &:focus {
+      + .modal-form-label {
+        @extend %style-form-input-icon
+      }
+      ~ .modal-form-svg {
+        fill: $accent-color;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        }
+      }
+    }
+    .modal-form-input {
+      &:not(:placeholder-shown) {
+        + .modal-form-label {
+          @extend %style-form-input-icon
+        }
+      }
+  }
+
+
+.modal-form-message {
+    width: 448px;
+    height: 120px;
+    margin-bottom: 20px;
+    resize: none;
+    padding: 12px 16px;
+    outline: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    transition-property: border;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus {
+        border: 1px solid $accent-color;
+        border-radius: 4px;
+    }
+}
+
+
+.modal-form-option-label {
+    position: relative;
+    display: flex;
+    margin-bottom: 30px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-form-option-agree {
+    /* display: flex; */
+    margin-left: 7px;
+    color: #757575;
+}
+
+.modal-form-checkbox {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.modal-form-checkbox-icon {
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    border: 2px solid #212121;
+    border-radius: 2px;
+    transition-property: background-color, border-color;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-image: url("../images/svg/icon-check2.svg");
+    background-size: contain;
+    background-origin: border-box;
+}
+
+.modal-form-checkbox:checked {
+    + .modal-form-checkbox-icon {
+    background-color: $accent-color;
+    border-color: $accent-color;
+    }
+}
+
+.condition {
+    color: $accent-color;
+    text-decoration: underline;
+}
+
+.close-button {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.1);   
+    border-radius: 50%;
+    background-color: #ffffff;
+   
+}
+
+.modal-form-close-svg {
+    display: block;
+    width: 18px;
+    height: 18px;
+    transition-property: fill;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+
+.close-button:focus,
+.close-button:hover {
+    .modal-form-close-svg {
+    @extend %btn-hover-fill-svg;
+    }
+}

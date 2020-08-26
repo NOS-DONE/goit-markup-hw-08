@@ -1,0 +1,37 @@
+html {
+    box-sizing: border-box;
+  }
+
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+/* Web Studio */
+
+body{
+    font-family: $main-font;
+    font-style: normal;
+    background-color: #ffffff;
+    font-size: 14px;
+}
+
+h1 {
+    margin: 0;
+ }
+
+li {
+     list-style: none;
+ }
+
+img {
+    display: block;
+}
+ 
+a {
+    text-decoration: none;
+    /* display: block; */
+ }

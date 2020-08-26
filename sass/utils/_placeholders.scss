@@ -1,0 +1,22 @@
+%team-card-font-style {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $h-color;
+}
+
+%btn-hover-fill-svg {
+    fill: $accent-color;
+}
+
+%style-form-input-icon {
+    transform: translate(-32px, -36px);
+    color: $accent-color;
+}
+
+%style-header-adress-list {
+    color: $accent-color;
+    fill: $accent-color;
+  }
