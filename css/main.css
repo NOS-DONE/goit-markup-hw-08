@@ -1074,14 +1074,32 @@ a {
   align-items: center;
 }
 
+@media screen and (max-width: 1199px) {
+  .what-do-we-do {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .what-do-we-do {
+    display: block;
+  }
+}
+
 /* team section */
 .team-section {
-  padding-top: 94px;
+  padding-top: 60px;
   background: #F5F4FA;
+}
+
+.team-section-tittle {
+  margin-bottom: 30px;
 }
 
 .team-list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   padding-bottom: 94px;
 }
 
@@ -1099,10 +1117,6 @@ a {
 
 .team-card-title {
   margin-bottom: 10px;
-}
-
-.team-list .team-card:not(:last-child) {
-  margin-right: 30px;
 }
 
 .team-list .card-social-list {
@@ -1149,6 +1163,45 @@ a {
 
 .card-social-list-link:hover, .card-social-list-link:focus {
   background-color: #2196F3;
+}
+
+@media screen and (max-width: 767px) {
+  .team-card {
+    width: 450px;
+  }
+  .team-list .team-card:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team-card {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .team-list .team-card:not(:nth-child(2n)) {
+    margin-right: 30px;
+  }
+  .team-list .team-card:nth-child(-n + 2) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-section {
+    padding-top: 94px;
+  }
+  .team-section-tittle {
+    margin-bottom: 50px;
+  }
+  .team-card {
+    width: 270px;
+  }
+  .team-list .team-card:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 /* Regular Clients */
