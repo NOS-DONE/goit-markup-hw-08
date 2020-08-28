@@ -1094,6 +1094,7 @@ a {
 
 .team-section-tittle {
   margin-bottom: 30px;
+  font-size: 28px;
 }
 
 .team-list {
@@ -1195,6 +1196,7 @@ a {
   }
   .team-section-tittle {
     margin-bottom: 50px;
+    font-size: 36px;
   }
   .team-card {
     width: 270px;
@@ -1206,23 +1208,26 @@ a {
 
 /* Regular Clients */
 .regular-clients-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.regular-clients-section-tittle {
+  margin-bottom: 30px;
+  font-size: 28px;
 }
 
 .regular-klients-list {
   display: flex;
-}
-
-.regular-klients-list li:not(:last-child) {
-  margin-right: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .clients-logo-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
+  width: 210px;
   height: 90px;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
@@ -1243,6 +1248,49 @@ a {
 
 .clients-logo-link:hover svg {
   transform: perspective(900px) rotateX(360deg) scale(1.5);
+}
+
+@media screen and (max-width: 767px) {
+  .regular-klients-list li:nth-child(2n +1) {
+    margin-right: 30px;
+  }
+  .regular-klients-list li:nth-child(-n + 4) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .regular-klients-list li:not(:nth-child(3n)) {
+    margin-right: 30px;
+  }
+  .regular-klients-list li:nth-child(-n + 3) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .regular-clients-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .regular-clients-section-tittle {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
+  .regular-klients-list {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+  .clients-logo-link {
+    width: 170px;
+  }
+  .regular-klients-list {
+    display: flex;
+  }
+  .regular-klients-list li:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 /* footer */
