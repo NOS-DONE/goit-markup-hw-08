@@ -12,31 +12,17 @@
 
 .about-us-list {
     display: flex;
+    flex-wrap: wrap;
     padding-top: 90px;
     padding-bottom: 49px;
 }
 
 .about-us-list {
-    li {
-        &:not(:last-child) {
-        margin-right: 30px;
-        }
-    }
-}
-
-.about-us-list {
     .list-item {
     display: block;
-    width: 270px;
+    width: 100%;
+    // text-align: center;
     }
-}
-
-.about-us-svg {
-    width: 70px;
-    height: 70px;
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
 }
 
 .about-us-bg {
@@ -44,6 +30,14 @@
     background: #F5F4FA;
     height: 120px;
     margin-bottom: 30px;
+    align-items: center;
+}
+
+.about-us-svg {
+    width: 70px;
+    height: 70px;
+    margin-left: auto;
+    margin-right: auto;
     align-items: center;
 }
 
@@ -64,3 +58,116 @@
     letter-spacing: 0.03em;
     color: $p-color;
 }
+
+@media screen and (max-width: 767px) {
+    .list-item {
+        &:not(:last-child){
+            margin-bottom: 30px;
+        }
+    }
+
+    .about-second-title {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .about-us-list {
+        
+    }
+
+        .about-us-list {
+        .list-item {
+        display: block;
+        width: 354px;
+        }
+
+        li {
+            &:not(:nth-child(2n)) {
+            margin-right: 30px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+        .about-us-list {
+        .list-item {
+            display: block;
+            width: 270px;
+        }
+    }
+
+        .about-us-list {
+        li {
+            &:not(:last-child) {
+            margin-right: 30px;
+            }
+        }
+    }
+}
+
+// .section-title {
+//     font-weight: 700;
+//     font-size: 36px;
+//     line-height: 1.16;
+//     text-align: center;
+//     letter-spacing: 0.03em;
+//     color: $h-color;
+//     margin-bottom: 50px;
+// }
+
+// .about-us-list {
+//     display: flex;
+//     padding-top: 90px;
+//     padding-bottom: 49px;
+// }
+
+// .about-us-list {
+//     li {
+//         &:not(:last-child) {
+//         margin-right: 30px;
+//         }
+//     }
+// }
+
+// .about-us-list {
+//     .list-item {
+//     display: block;
+//     width: 270px;
+//     }
+// }
+
+// .about-us-svg {
+//     width: 70px;
+//     height: 70px;
+//     margin-left: auto;
+//     margin-right: auto;
+//     align-items: center;
+// }
+
+// .about-us-bg {
+//     display: flex;
+//     background: #F5F4FA;
+//     height: 120px;
+//     margin-bottom: 30px;
+//     align-items: center;
+// }
+
+// .about-second-title {
+//     font-weight: 700;
+//     font-size: 14px;
+//     line-height: 1.14;
+//     letter-spacing: 0.03em;
+//     text-transform: uppercase;
+//     color: $h-color;
+//     margin-bottom: 10px;
+// }
+
+// .about-description {
+//     font-weight: 400;
+//     font-size: 14px;
+//     line-height: 1.71;
+//     letter-spacing: 0.03em;
+//     color: $p-color;
+// }

@@ -184,7 +184,6 @@
 
   .web-studio-header .container {
     display: flex;
-    justify-content: center;
     align-items: center;
   }
 
@@ -313,6 +312,7 @@
 .logo {
     font-size: 26px;
     line-height: 1.19;
+    margin-right: auto;
   }
 
   .nav {

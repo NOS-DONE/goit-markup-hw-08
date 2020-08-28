@@ -796,7 +796,6 @@ a {
 @media screen and (min-width: 768px) {
   .web-studio-header .container {
     display: flex;
-    justify-content: center;
     align-items: center;
   }
   .web-studio-header .logo {
@@ -886,6 +885,7 @@ a {
   .logo {
     font-size: 26px;
     line-height: 1.19;
+    margin-right: auto;
   }
   .nav {
     display: flex;
@@ -919,6 +919,7 @@ a {
   background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/Header-img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   background-color: black;
   max-width: 1600px;
 }
@@ -959,25 +960,14 @@ a {
 
 .about-us-list {
   display: flex;
+  flex-wrap: wrap;
   padding-top: 90px;
   padding-bottom: 49px;
 }
 
-.about-us-list li:not(:last-child) {
-  margin-right: 30px;
-}
-
 .about-us-list .list-item {
   display: block;
-  width: 270px;
-}
-
-.about-us-svg {
-  width: 70px;
-  height: 70px;
-  margin-left: auto;
-  margin-right: auto;
-  align-items: center;
+  width: 100%;
 }
 
 .about-us-bg {
@@ -985,6 +975,14 @@ a {
   background: #F5F4FA;
   height: 120px;
   margin-bottom: 30px;
+  align-items: center;
+}
+
+.about-us-svg {
+  width: 70px;
+  height: 70px;
+  margin-left: auto;
+  margin-right: auto;
   align-items: center;
 }
 
@@ -1004,6 +1002,35 @@ a {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
+}
+
+@media screen and (max-width: 767px) {
+  .list-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .about-second-title {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about-us-list .list-item {
+    display: block;
+    width: 354px;
+  }
+  .about-us-list li:not(:nth-child(2n)) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about-us-list .list-item {
+    display: block;
+    width: 270px;
+  }
+  .about-us-list li:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 /* what do we do */

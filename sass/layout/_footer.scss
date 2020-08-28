@@ -103,17 +103,17 @@ footer {
     padding-bottom: 60px;
 }
 
-    .footer-subscribe-form {
-        display: block;
-        // flex-wrap: wrap;
-        // justify-content: center;
+.footer-subscribe-form {
+     display: block;
+    // flex-wrap: wrap;
+    // justify-content: center;
 
-        .btn-general {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+    .btn-general {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
+}
 
 
 .form-imput-email {
