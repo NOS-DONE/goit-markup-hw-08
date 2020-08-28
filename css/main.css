@@ -1220,7 +1220,7 @@ a {
 .regular-klients-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .clients-logo-link {
@@ -1260,6 +1260,9 @@ a {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+  .clients-logo-link {
+    width: 226px;
+  }
   .regular-klients-list li:not(:nth-child(3n)) {
     margin-right: 30px;
   }
