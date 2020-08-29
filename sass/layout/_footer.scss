@@ -118,7 +118,7 @@ footer {
 
 .form-imput-email {
     border: 1px solid rgba(255, 255, 255, 0.3);
-    width: 450px;
+    width: 100%;
     height: 50px;
     padding-left: 16px;
     border-radius: 4px;
@@ -145,11 +145,7 @@ footer {
     margin-left: 10px;    
 }
 
-@media screen and (max-width: 1199px) {
-    .form-imput-email {
-        margin-bottom: 20px;
-    }
-}
+
 
 @media screen and (min-width: 768px) {
     .footer-adress {
@@ -172,7 +168,17 @@ footer {
         }
     }
 
+    .form-imput-email {
+        width: 450px;
+    }
+
    
+}
+
+@media screen and (max-width: 1199px) {
+    .form-imput-email {
+        margin-bottom: 20px;
+    }
 }
 
 

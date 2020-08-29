@@ -45,10 +45,10 @@
         // background-size: 768px 400px;
     }
 
-    .hero-content {
-        padding-top: 118px;
-        padding-bottom: 118px;
-    }
+        // .hero-content {
+        //     padding-top: 118px;
+        //     padding-bottom: 118px;
+        // }
 }
 
 @media screen and (min-device-pixel-ratio: 2),
@@ -63,6 +63,13 @@
         rgba(47, 48, 58, 0.8)),
         url('../images/main/section_1_hero/mobile/m_header_img@2x.jpg');
   }
+}
+
+@media screen and (max-width: 767px) {
+    .hero-content {
+        padding-top: 118px;
+        padding-bottom: 118px;
+    }
 }
 
 @media screen and (min-width: 768px) {
