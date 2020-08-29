@@ -115,16 +115,19 @@
                 <h2 class="section-title">Чем мы занимаемся</h2>
                 <ul class="what-do-we-do-list">
                     <li class="what-our-direction">
-                            <img src="./images/main/section_3/img_1.jpg" alt="человек печатает" width="370" height="294">
+                            <img srcset="./images/main/section_3/desktop/img.jpg 1x, ./images/main/section_3/desktop/img@2x.jpg 2x" 
+                            src="./images/main/section_3/img_1.jpg" alt="человек печатает" width="370" height="294">
                             <h3 class="what-our-direction-title">Десктопные приложения</h3>
                     </li>
                     <li class="what-our-direction">
-                            <img src="./images/main/section_3/img_2.jpg" alt="мобильный телефон" width="370" height="294">
+                            <img srcset="./images/main/section_3/desktop/img-2.jpg 1x, ./images/main/section_3/desktop/img-2@2x.jpg 2x"
+                            src="./images/main/section_3/img_2.jpg" alt="мобильный телефон" width="370" height="294">
                             <h3 class="what-our-direction-title">Мобильные приложения</h3>
                     </li>
                     <li class="what-our-direction">
                         <div >
-                            <img class="" src="./images/main/section_3/img_3.jpg" alt="монитор со страницой сайта" width="370" height="294">
+                            <img srcset="./images/main/section_3/desktop/img-3.jpg 1x, ./images/main/section_3/desktop/img-3@2x.jpg 2x"
+                            class="" src="./images/main/section_3/img_3.jpg" alt="монитор со страницой сайта" width="370" height="294">
                             <h3 class="what-our-direction-title">Дизайнерские решения</h3>
                         </div>
                     </li>
@@ -137,7 +140,21 @@
                 <h2 class="section-title team-section-tittle">Наша команда</h2>
                 <ul class="team-list">
                     <li class="team-card">
-                        <img src="./images/main/section_4_team/img_1.jpg" alt="член команди номер 1" width="270" height="260">
+                        <picture>
+                            <source srcset="./images/main/section_4_team/mobile/m-img.jpg 1x, ./images/main/section_4_team/mobile/m-img@2x.jpg 2x" type="image/jpg" media="(max-width: 767px)">
+                            <source srcset="./images/main/section_4_team/desktop/d-img.jpg 1x, ./images/main/section_4_team/desktop/d-img@2x.jpg 2x" type="image/jpg" media="(min-width: 1200px)">
+                            <source srcset="./images/main/section_4_team/tablet/t-img.jpg 1x, ./images/main/section_4_team/tablet/t-img@2x.jpg 2x" type="image/jpg" media="(min-width: 768px)">
+                            <img 
+                            srcset="
+                            ./images/main/section_4_team/mobile/m-img.jpg 1x, 
+                            ./images/main/section_4_team/mobile/m-img@2x.jpg 2x, 
+                            ./images/main/section_4_team/desktop/d-img.jpg 1x, 
+                            ./images/main/section_4_team/desktop/d-img@2x.jpg 2x, 
+                            ./images/main/section_4_team/tablet/t-img.jpg 1x, 
+                            ./images/main/section_4_team/tablet/t-img@2x.jpg 2x"
+                            src="./images/main/section_4_team/img_1.jpg" alt="член команди номер 1">
+
+                        </picture>
                         <h3 class="team-card-title">Николай Кучеренко</h3>
                         <p class="team-card-desc" lang="en">Product Designer</p>
                         <ul class="card-social-list">
@@ -173,7 +190,21 @@
                         </ul>
                     </li>
                     <li class="team-card">
-                        <img src="./images/main/section_4_team/img_2.jpg" alt="член команди номер 2" width="270" height="260">
+                        <picture>
+                            <source srcset="./images/main/section_4_team/mobile/m-img-1.jpg 1x, ./images/main/section_4_team/mobile/m-img-1@2x.jpg 2x" type="image/jpg" media="(max-width: 767px)">
+                                <source srcset="./images/main/section_4_team/desktop/d-img-1.jpg 1x, ./images/main/section_4_team/desktop/d-img-1@2x.jpg 2x" type="image/jpg" media="(min-width: 1200px)">
+                                <source srcset="./images/main/section_4_team/tablet/t-img-1.jpg 1x, ./images/main/section_4_team/tablet/t-img-1@2x.jpg 2x" type="image/jpg" media="(min-width: 768px)">
+                                <img 
+                                srcset="
+                                ./images/main/section_4_team/mobile/m-img-1.jpg 1x, 
+                                ./images/main/section_4_team/mobile/m-img-1@2x.jpg 2x,
+                                ./images/main/section_4_team/desktop/d-img-1.jpg 1x,
+                                ./images/main/section_4_team/desktop/d-img-1@2x.jpg 2x,
+                                ./images/main/section_4_team/tablet/t-img-1.jpg 1x, 
+                                ./images/main/section_4_team/tablet/t-img-1@2x.jpg 2x"
+                                src="./images/main/section_4_team/img_1.jpg" alt="член команди номер 1">
+    
+                        </picture>
                         <h3 class="team-card-title">Ольга Иванова</h3>
                         <p class="team-card-desc" lang="en">Frontend Developer</p>
                         <ul class="card-social-list">
@@ -209,7 +240,21 @@
                         </ul>
                     </li>
                     <li class="team-card">
-                        <img src="./images/main/section_4_team/img_3.jpg" alt="член команди номер 3" width="270" height="260">
+                        <picture>
+                            <source srcset="./images/main/section_4_team/mobile/m-img-2.jpg 1x, ./images/main/section_4_team/mobile/m-img-2@2x.jpg 2x" type="image/jpg" media="(max-width: 767px)">
+                                <source srcset="./images/main/section_4_team/desktop/d-img-2.jpg 1x, ./images/main/section_4_team/desktop/d-img-2@2x.jpg 2x" type="image/jpg" media="(min-width: 1200px)">
+                                <source srcset="./images/main/section_4_team/tablet/t-img-2.jpg 1x, ./images/main/section_4_team/tablet/t-img-2@2x.jpg 2x" type="image/jpg" media="(min-width: 768px)">
+                                <img 
+                                srcset="
+                                ./images/main/section_4_team/mobile/m-img-2.jpg 1x, 
+                                ./images/main/section_4_team/mobile/m-img-2@2x.jpg 2x,
+                                ./images/main/section_4_team/desktop/d-img-2.jpg 1x,
+                                ./images/main/section_4_team/desktop/d-img-2@2x.jpg 2x,
+                                ./images/main/section_4_team/tablet/t-img-2.jpg 1x, 
+                                ./images/main/section_4_team/tablet/t-img-2@2x.jpg 2x"
+                                src="./images/main/section_4_team/img_1.jpg" alt="член команди номер 1">
+    
+                        </picture>
                         <h3 class="team-card-title">Андрей Шевченко</h3>
                         <p class="team-card-desc" lang="en">Marketing</p>
                         <ul class="card-social-list">
@@ -245,8 +290,22 @@
                         </ul>
                     </li>
                     <li class="team-card">
-                        <img src="./images/main/section_4_team/img_4.jpg" alt="член команди номер 4" width="270" height="260">
-                        <h3 class="team-card-title">Иван Николаев</h3>
+                    <picture>
+                        <source srcset="./images/main/section_4_team/mobile/m-img-3.jpg 1x, ./images/main/section_4_team/mobile/m-img-3@2x.jpg 2x" type="image/jpg" media="(max-width: 767px)">
+                            <source srcset="./images/main/section_4_team/desktop/d-img-3.jpg 1x, ./images/main/section_4_team/desktop/d-img-3@2x.jpg 2x" type="image/jpg" media="(min-width: 1200px)">
+                            <source srcset="./images/main/section_4_team/tablet/t-img-3.jpg 1x, ./images/main/section_4_team/tablet/t-img-3@2x.jpg 2x" type="image/jpg" media="(min-width: 768px)">
+                            <img 
+                            srcset="
+                            ./images/main/section_4_team/mobile/m-img-3.jpg 1x, 
+                            ./images/main/section_4_team/mobile/m-img-3@2x.jpg 2x,
+                            ./images/main/section_4_team/desktop/d-img-3.jpg 1x,
+                            ./images/main/section_4_team/desktop/d-img-3@2x.jpg 2x,
+                            ./images/main/section_4_team/tablet/t-img-3.jpg 1x, 
+                            ./images/main/section_4_team/tablet/t-img-3@2x.jpg 2x"
+                            src="./images/main/section_4_team/img_1.jpg" alt="член команди номер 1">
+
+                    </picture>
+                    <h3 class="team-card-title">Иван Николаев</h3>
                         <p class="team-card-desc" lang="en">UI Designer</p>
                         <ul class="card-social-list">
                             <li>
