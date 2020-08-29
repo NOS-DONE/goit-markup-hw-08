@@ -209,6 +209,12 @@
     }
 }
 
+@media screen and (max-width: 479px) {
+    .modal-form-message {
+        max-width: 100%;
+    }
+}
+
 @media screen and (min-width: 1200px) {
     .modal-form-option-label {
         font-size: 14px;
