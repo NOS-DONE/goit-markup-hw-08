@@ -851,7 +851,7 @@ a {
     margin-right: auto;
     margin-left: auto;
     border-radius: 2px;
-    margin-top: 27px;
+    margin-top: 30px;
   }
   .stydio-underline .nav-item-link {
     padding-top: 32px;
@@ -1606,10 +1606,14 @@ footer {
 }
 
 .portfolio-item {
-  width: 450px;
   background: #FFFFFF;
   transition-property: box-shadow;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-item img {
+  display: block;
+  width: 100%;
 }
 
 .portfolio-item:hover {
@@ -1661,7 +1665,6 @@ footer {
 }
 
 .portfolio-item-img-wrapper {
-  width: 450px;
   z-index: 50;
   position: relative;
   overflow: hidden;
@@ -1692,6 +1695,15 @@ footer {
   color: #FFFFFF;
 }
 
+@media screen and (min-width: 480px) {
+  .portfolio-item {
+    width: 450px;
+    background: #FFFFFF;
+    transition-property: box-shadow;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
 @media screen and (max-width: 767px) {
   .portfolio-item:not(:last-child) {
     margin-bottom: 30px;
@@ -1701,6 +1713,11 @@ footer {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .filter-list {
     justify-content: center;
+  }
+  .protfolio-item-title {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
   }
   .portfolio-item {
     width: 354px;
