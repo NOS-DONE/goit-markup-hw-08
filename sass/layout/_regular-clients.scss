@@ -16,16 +16,13 @@
     justify-content: space-between;
 }
 
-// .clients-logo {
-//     width: calc((100% - 30px) / 2);
-// }
+
 
 .clients-logo-link {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 145px;
-    // width: 100%;
+    max-width: 210px;
     height: 90px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
@@ -64,8 +61,13 @@
         li:nth-child(-n + 4) {
             margin-bottom: 30px;
         }
+
+        
     }
     
+    .clients-logo {
+        width: calc((100% - 30px) / 2);
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
